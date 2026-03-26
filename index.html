@@ -246,37 +246,52 @@
     flex-shrink: 0;
   }
 
-  .optin-form form {
-    margin: 0;
+  /* Kit Form Styling */
+  .optin-form .formkit-form {
+    max-width: 100% !important;
   }
   
-  .optin-form input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    font-family: var(--sans);
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-bottom: 0.7rem;
+  .optin-form .formkit-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
   }
-
-  .optin-form button[type="submit"] {
-    width: 100%;
-    padding: 0.75rem;
-    background: var(--accent);
-    color: white;
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  
+  .optin-form .formkit-field {
+    margin: 0 !important;
   }
-
-  .optin-form button[type="submit"]:hover { background: #163fa0; }
+  
+  .optin-form .formkit-input {
+    width: 100%;
+    padding: 0.75rem 1rem !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 3px !important;
+    font-family: var(--sans) !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .optin-form .formkit-submit {
+    margin: 0 !important;
+    background: var(--accent) !important;
+    border-radius: 3px !important;
+  }
+  
+  .optin-form .formkit-submit:hover {
+    background: #163fa0 !important;
+  }
+  
+  .optin-form .formkit-submit > span {
+    padding: 0.75rem !important;
+    font-family: var(--sans) !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+  }
+  
+  .optin-form .formkit-powered-by-convertkit-container {
+    display: none !important;
+  }
 
   .card-note {
     font-size: 0.7rem;
@@ -543,7 +558,22 @@
         <li>No login, no app, no internet needed</li>
       </ul>
       <div class="optin-form">
-        <script async data-uid="6ae1950f9d" src="https://enrich-physics.kit.com/6ae1950f9d/index.js"></script>
+        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+        <form action="https://app.kit.com/forms/9251842/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9251842" data-uid="6ae1950f9d" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}' min-width="400 500 600 700 800">
+          <div data-style="clean">
+            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+              <div class="formkit-field">
+                <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email">
+              </div>
+              <button data-element="submit" class="formkit-submit formkit-submit">
+                <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                <span class="">Send me the trainer!</span>
+              </button>
+            </div>
+            <div class="formkit-powered-by-convertkit-container" data-active="false"></div>
+          </div>
+        </form>
       </div>
       <p class="card-note">No spam. One email. Unsubscribe any time.</p>
     </div>
@@ -612,7 +642,22 @@
     <h2>Get the trainer.</h2>
     <p>Free download, delivered by email. No strings attached.</p>
     <div class="optin-form">
-      <script async data-uid="6ae1950f9d" src="https://enrich-physics.kit.com/6ae1950f9d/index.js"></script>
+      <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+      <form action="https://app.kit.com/forms/9251842/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9251842" data-uid="6ae1950f9d" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}' min-width="400 500 600 700 800">
+        <div data-style="clean">
+          <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+          <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+            <div class="formkit-field">
+              <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email">
+            </div>
+            <button data-element="submit" class="formkit-submit formkit-submit">
+              <div class="formkit-spinner"><div></div><div></div><div></div></div>
+              <span class="">Send me the trainer!</span>
+            </button>
+          </div>
+          <div class="formkit-powered-by-convertkit-container" data-active="false"></div>
+        </div>
+      </form>
     </div>
     <p style="font-size:0.75rem; color:var(--muted); margin-top:0.8rem;">One email. No list. Unsubscribe whenever.</p>
   </div>
